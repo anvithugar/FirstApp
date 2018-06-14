@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.anvit.firstapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.example.anvit.firstapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.anvit.firstapp.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="HardcodedDebugMode">
+        <activity
+            android:name=".Splash"
+            android:theme="@style/splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AccountActivity.LoginActivity" />
+        <activity android:name=".AccountActivity.SignupActivity" />
+        <activity android:name=".AccountActivity.ResetPasswordActivity" />
+        <activity android:name=".GridMainActivity.GridActivity" />
+        <activity android:name=".FirstYearActivity" />
+        <activity android:name=".CseActivity" />
+        <activity android:name=".CivilActivity" />
+        <activity android:name=".ElectricalActivity" />
+        <activity android:name=".ElectronicsActivity" />
+        <activity android:name=".MechActivity" />
+        <activity android:name=".ISActivity" />
+        <activity android:name=".CCTActivity" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.example.anvit.firstapp" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.example.anvit.firstapp.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.example.anvit.firstapp.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+
+        <activity android:name=".CollegeActivity.CollegeGrid" />
+        <activity android:name=".GridMainActivity2.GridActivity2" />
+        <activity android:name=".GridMainActivity2.CCT2Activity" />
+        <activity android:name=".GridMainActivity2.Civil2Activity" />
+        <activity android:name=".GridMainActivity2.Cse2Activiy" />
+        <activity android:name=".GridMainActivity2.Electrical2Activity" />
+        <activity android:name=".GridMainActivity2.Electronics2Activity" />
+        <activity android:name=".GridMainActivity2.FirstYear2Activity" />
+        <activity android:name=".GridMainActivity2.IS2Activity" />
+        <activity android:name=".GridMainActivity2.Mech2Activity" />
+        <activity android:name=".CvSemActivity" />
+        <activity android:name=".CseSem.Csesem11" />
+        <activity android:name=".CseSem.Csesem12" />
+        <activity android:name=".CseSem.Csesem13" />
+        <activity android:name=".CseSem.Csesem14" />
+        <activity android:name=".CseSem.Csesem15" />
+        <activity android:name=".CseSem.Csesem16"></activity>
+    </application>
+
+</manifest>

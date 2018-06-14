@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "984176197438",
+    "firebase_url": "https://firstapp-f8446.firebaseio.com",
+    "project_id": "firstapp-f8446",
+    "storage_bucket": "firstapp-f8446.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984176197438:android:e41f53f889f1860b",
+        "android_client_info": {
+          "package_name": "com.example.anvit.firstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984176197438-frl1ia9a3j5ici2vor2re8euvvdfqsgm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHD8G3stAGi54RICGEiYgEZ73ctmhBdY0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
